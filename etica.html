@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Institucional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="menu-toggle">☰ Menu</button> <!-- Botón para mostrar/ocultar el menú -->
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo Institucional">
+                <span>Parcial III Sitio web</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="legis.html">Legislación Informática</a></li>
+                <li><a href="leyes.html">Leyes Nacionales e Internacionales</a></li>
+                <li><a href="proceso.html">Proceso de Trámite</a></li>
+                <li><a href="etica.html">Ética Informática</a></li>
+                <li><a href="caracteristicas.html">Características de los Delitos</a></li>
+                <li><a href="conclusiones.html">Conclusiones y Referencias</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="vision-mision">
+                <div class="legislacion-informatica">
+                    
+                    <h4>2. Ética informática y delitos informáticos</h4>
+                    <p>
+                        La ética informática y los delitos informáticos son áreas fundamentales en el estudio y la práctica de la tecnología de la información. La ética informática se centra en los principios y normas que guían el comportamiento de los profesionales de TI, asegurando que las prácticas sean justas y responsables. Los delitos informáticos, por otro lado, involucran actividades ilegales realizadas a través de computadoras y redes, tales como el hacking, el phishing, y la distribución de malware.
+                    </p>
+
+                    <h4>2.1 Conceptos de ética y delitos informáticos</h4>
+                    <p>
+                        La ética informática se refiere a la aplicación de principios éticos en el desarrollo, implementación y uso de tecnologías de la información. Esto incluye la responsabilidad de proteger la privacidad de los usuarios, asegurar la integridad de los datos y respetar la propiedad intelectual.
+                    </p>
+                    <p>
+                        Los delitos informáticos abarcan una variedad de actividades ilícitas que utilizan la tecnología para dañar, robar o interferir con sistemas y datos. Entre estos se encuentran:
+                    </p>
+                    <ul>
+                        <li><strong>Hacking:</strong> Acceso no autorizado a sistemas informáticos.</li>
+                        <li><strong>Phishing:</strong> Intentos de obtener información sensible mediante engaños.</li>
+                        <li><strong>Malware:</strong> Software malicioso diseñado para dañar o comprometer sistemas.</li>
+                        <li><strong>Fraude en línea:</strong> Engaños y estafas realizadas a través de internet.</li>
+                    </ul>
+                    <p>
+                        Comprender estos conceptos es crucial para la formación de profesionales éticos y para la protección contra las amenazas digitales.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; leonardo garcia ortega.</p>
+    </footer>
+    <script>
+        // Script para manejar el botón del menú desplegable
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Institucional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="menu-toggle">☰ Menu</button> <!-- Botón para mostrar/ocultar el menú -->
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo Institucional">
+                <span>Parcial III Sitio web</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="legis.html">Legislación Informática</a></li>
+                <li><a href="leyes.html">Leyes Nacionales e Internacionales</a></li>
+                <li><a href="proceso.html">Proceso de Trámite</a></li>
+                <li><a href="etica.html">Ética Informática</a></li>
+                <li><a href="caracteristicas.html">Características de los Delitos</a></li>
+                <li><a href="conclusiones.html">Conclusiones y Referencias</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="vision-mision">
+                <div class="legislacion-informatica">
+                    
+                    <h4>1.4 Proceso de trámite de registro de obras ante la institución de derechos de autor</h4>
+                    <p>
+                        El proceso de trámite para registrar una obra ante la institución de derechos de autor generalmente incluye los siguientes pasos:
+                    </p>
+                    <ul>
+                        <li>Preparar la documentación necesaria, que puede incluir una descripción detallada de la obra, una copia de la misma y una solicitud formal.</li>
+                        <li>Completar el formulario de registro proporcionado por la institución de derechos de autor.</li>
+                        <li>Pagar la tarifa de registro correspondiente.</li>
+                        <li>Presentar la solicitud y los documentos en la oficina de derechos de autor o a través de su plataforma en línea.</li>
+                        <li>Esperar la confirmación del registro y la emisión del certificado de derechos de autor, si corresponde.</li>
+                    </ul>
+                    <p>
+                        Es fundamental seguir estos pasos de manera precisa para asegurar la protección legal adecuada de la obra registrada.
+                    </p>
+
+                    <h4>1.5 Proceso de elaboración de avisos de privacidad</h4>
+                    <p>
+                        La elaboración de avisos de privacidad es esencial para cumplir con las regulaciones de protección de datos y garantizar la transparencia en el manejo de información personal. El proceso incluye:
+                    </p>
+                    <ul>
+                        <li>Identificar y detallar el tipo de datos personales que se recopilan, la finalidad de su uso, y el tiempo durante el cual se conservarán.</li>
+                        <li>Especificar los derechos que tienen las personas respecto a sus datos personales, como el acceso, rectificación, cancelación y oposición.</li>
+                        <li>Incluir información de contacto para que los individuos puedan ejercer sus derechos o plantear consultas.</li>
+                        <li>Redactar el aviso de manera clara y accesible, utilizando un lenguaje sencillo y evitando términos legales complicados.</li>
+                        <li>Publicar el aviso en un lugar visible y accesible, y asegurarse de que esté disponible en todas las plataformas relevantes donde se recopilan datos.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; leonardo garcia ortega.</p>
+    </footer>
+    <script>
+        // Script para manejar el botón del menú desplegable
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

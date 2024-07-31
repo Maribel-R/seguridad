@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Institucional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="menu-toggle">☰ Menu</button> <!-- Botón para mostrar/ocultar el menú -->
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo Institucional">
+                <span>Parcial III Sitio web</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="legis.html">Legislación Informática</a></li>
+                <li><a href="leyes.html">Leyes Nacionales e Internacionales</a></li>
+                <li><a href="proceso.html">Proceso de Trámite</a></li>
+                <li><a href="etica.html">Ética Informática</a></li>
+                <li><a href="caracteristicas.html">Características de los Delitos</a></li>
+                <li><a href="conclusiones.html">Conclusiones y Referencias</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="vision-mision">
+                <div class="legislacion-informatica">
+                    <h2>1.Legislación Informática</h2>
+                    <p>
+                        La Legislación Informática se refiere al uso de los medios informáticos, uno de sus objetivos principales es el resguardar, así como establecer limitaciones, también reglas para que informática no se convierta en un medio por el cual se desvíen los fines para los cuales fue creada.
+                    </p>
+                    
+                    <h4>1.1 Conceptos de Derechos de Autor, Privacidad y Protección de Datos</h4>
+                    <p>
+                        La legislación informática abarca diversas áreas cruciales para el manejo adecuado y seguro de la información. Entre estos se encuentran los derechos de autor, que protegen las obras y creaciones originales de los individuos, garantizando que se reconozcan y respeten sus derechos morales y patrimoniales sobre dichas obras.
+                    </p>
+                    <p>
+                        La privacidad, por su parte, se refiere al derecho de los individuos a controlar el acceso y uso de su información personal, evitando intrusiones no deseadas en su vida privada. Las leyes de protección de datos establecen las normas para la recolección, almacenamiento y manejo de datos personales, asegurando que estos se traten de manera justa y segura.
+                    </p>
+                    <!-- Imagen agregada aquí -->
+                    <img src="img/img_1.jpg" alt="Imagen sobre privacidad" class="footer-image">
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nuestra Institución. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Script para manejar el botón del menú desplegable
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Fondo gris muy claro */
+    color: #333; /* Texto gris oscuro */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366; /* Azul marino */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Alineación mejorada */
+}
+
+.header-content .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-content .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Oculta el botón en pantallas grandes */
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Sidebar Styles */
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row; /* Asegura que el contenido y la barra lateral estén uno al lado del otro */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    min-height: 100vh;
+    position: relative; /* Permite posicionar contenido con flexibilidad */
+    transition: transform 0.3s ease; /* Transición suave para el menú desplegable */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #dcdcdc; /* Cambiado a gris */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(220, 220, 220, 0.9); /* Cambiado a gris con transparencia */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    margin: 0 auto;
+    color: #333; /* Cambiado a texto oscuro */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Additional Info Styles */
+.additional-info {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: left;
+}
+
+.additional-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.additional-info .presenta {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.additional-info .professor {
+    font-weight: 600;
+}
+
+.additional-info .role, .additional-info .group {
+    font-weight: 400;
+}
+
+.additional-info .group-number {
+    font-weight: bold;
+}
+
+/* Vision y Misión Styles */
+.vision-mision {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    text-align: center;
+}
+
+.vision-mision h2 {
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Footer Image Styles */
+.footer-image {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        transform: translateX(-100%); /* Oculta la barra lateral */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        transform: translateX(0); /* Muestra la barra lateral cuando esté activa */
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .vision-mision {
+        max-width: 100%;
+    }
+}
+
+/* Ajustes para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.6em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .sidebar ul li a {
+        padding: 10px 15px;
+    }
+
+    .additional-info p {
+        font-size: 0.9em;
+    }
+}

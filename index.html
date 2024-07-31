@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Institucional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="menu-toggle">☰ Menu</button> <!-- Botón para mostrar/ocultar el menú -->
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo Institucional">
+                <span>Parcial III Sitio web</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="legis.html">Legislación Informática</a></li>
+                <li><a href="leyes.html">Leyes Nacionales e Internacionales</a></li>
+                <li><a href="proceso.html">Proceso de Trámite</a></li>
+                <li><a href="etica.html">Ética Informática</a></li>
+                <li><a href="caracteristicas.html">Características de los Delitos</a></li>
+                <li><a href="conclusiones.html">Conclusiones y Referencias</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Universidad Politécnica de Tecámac</h1>
+                    <h2>Ingeniería en Software</h2>
+                    <p>Seguridad de la Información</p>
+                    <div class="additional-info">
+                        <p class="presenta">PRESENTA</p>
+                        <p class="professor">LEONARDO GARCÍA ORTEGA</p>
+                        <p class="role">DOCENTE</p>
+                        <p class="professor">DR. NÉSTOR APOLO LÓPEZ GONZÁLEZ</p>
+                        <p class="group">GRUPO</p>
+                        <p class="group-number">3924IS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-mision">
+                <h2>Introducción</h2>
+                <p>
+                    En el entorno digital actual, la legislación informática y la ética son pilares fundamentales para el manejo y protección de la información. Esta pagina web aborda aspectos críticos de la legislación informática, comenzando con los conceptos de derechos de autor, privacidad y protección de datos. Se exploran las leyes nacionales e internacionales aplicables, junto con los trámites y requisitos para el registro de obras ante la institución de derechos de autor.
+                </p>
+                <p>
+                    Posteriormente, se detalla el proceso de trámite de registro de obras y la elaboración de avisos de privacidad. La segunda parte se enfoca en la ética informática y los delitos informáticos, definiendo conceptos clave y las características de los delitos tipificados en México. 
+                </p>
+                
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <p>&copy; leonardo garcia ortega .</p>
+    </footer>
+    <script>
+        // Script para manejar el botón del menú desplegable
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
